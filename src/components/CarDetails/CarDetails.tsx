@@ -53,51 +53,51 @@ const CarDetails = () => {
             <p className={css.carInfoLocationAddress}>
               {car.address.split(',').slice(1).join(',').trim()}
             </p>
+            <p className={css.carInfoLocationMile}>Mileage: {car.mileage} km</p>
           </div>
-          <p>Mileage:{car.mileage}</p>
         </div>
-        <p>${car.rentalPrice}</p>
-        <p>{car.description}</p>
-        <h3>Rental Conditions: </h3>
-        <ul>
+        <p className={css.carInfoPrice}>${car.rentalPrice}</p>
+        <p className={css.carInfoDescripion}>{car.description}</p>
+        <h3 className={css.carInfoTitle}>Rental Conditions: </h3>
+        <ul className={css.carInfoRent}>
           {car.rentalConditions.map((item) => (
-            <li key={item}>
+            <li key={item} className={css.carInfoRentItem}>
               <FaRegCircleCheck />
-              {item}
+              <p>{item}</p>
             </li>
           ))}
         </ul>
-        <h3>Car Specifications:</h3>
-        <ul>
-          <li>
+        <h3 className={css.carInfoTitle}>Car Specifications:</h3>
+        <ul className={css.carInfoRent}>
+          <li className={css.carInfoRentItem}>
             <BsCalendar2Week />
             <p>Year: {car.year}</p>
           </li>
-          <li>
+          <li className={css.carInfoRentItem}>
             <BsCarFront />
             <p>Type:{car.type}</p>
           </li>
-          <li>
+          <li className={css.carInfoRentItem}>
             <BsFuelPump />
             <p>Fuel Consumption:{car.fuelConsumption}</p>
           </li>
-          <li>
+          <li className={css.carInfoRentItem}>
             <GoGear />
             <p>Engine Size: {car.engineSize}</p>
           </li>
         </ul>
-        <h3>Accessories and functionalities:</h3>
-        <ul>
+        <h3 className={css.carInfoTitle}>Accessories and functionalities:</h3>
+        <ul className={css.carInfoFA}>
           {car.accessories.map((item) => (
-            <li key={item}>
+            <li key={item} className={css.carInfoRentItem}>
               <FaRegCircleCheck />
-              {item}
+              <p>{item}</p>
             </li>
           ))}
           {car.functionalities.map((item) => (
-            <li key={item}>
+            <li key={item} className={css.carInfoRentItem}>
               <FaRegCircleCheck />
-              {item}
+              <p>{item}</p>
             </li>
           ))}
         </ul>

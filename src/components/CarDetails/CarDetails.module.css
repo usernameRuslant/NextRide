@@ -51,9 +51,12 @@
 
   line-height: 1.25;
   color: var(--gray);
+  margin-bottom: 8px;
 }
 .carInfoLocation {
   display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }
 .carInfoLocationAddress {
   font-family: var(--font-family);
@@ -62,4 +65,67 @@
 
   line-height: 1.25;
   color: var(--main);
+  margin-left: 4px;
+  margin-right: 16px;
+}
+.carInfoLocationMile {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+  font-family: var(--font-family);
+}
+.carInfoPrice {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+
+  line-height: 1.33333;
+  color: var(--button);
+  margin-bottom: 32px;
+}
+.carInfoDescripion {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+  font-family: var(--font-family);
+  margin-bottom: 68px;
+}
+.carInfoTitle {
+  font-weight: 600;
+  font-size: 20px;
+
+  line-height: 1.2;
+  color: var(--main);
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+}
+.carInfoRent {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.25;
+  color: var(--main);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 110px;
+}
+.carInfoRentItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.carInfoFA {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.25;
+  color: var(--main);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
