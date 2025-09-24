@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import type { Car } from '../../types/car';
 import css from './CarCard.module.css';
 
@@ -53,6 +54,7 @@ const CarCard = ({ car }: CarProps) => {
           <p className={css.carMoreInfoText}>{car.mileage} km</p>
         </li>
       </ul>
+      <Link to={`/catalog/${car.id}`}>Read more</Link>
     </li>
   );
 };

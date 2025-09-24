@@ -1,0 +1,65 @@
+.carDetails {
+  max-width: 1440px;
+  width: 100%;
+  padding-top: 84px;
+  padding-bottom: 104px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin: 0 auto;
+  display: flex;
+  gap: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 40px; расстояние между левым и правым */
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.carDetailsLeft,
+.carDetailsRight {
+  flex: 1; /* оба блока будут занимать равное пространство */
+  min-width: 320px;
+}
+.image {
+  /* max-width: 640px; */
+  width: 100%;
+  height: auto;
+  height: 512px;
+  border-radius: 19px;
+  margin-bottom: 40px;
+  object-fit: cover;
+}
+.form {
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  padding: 32px;
+  width: 100%;
+  height: 488px;
+}
+.carInfo {
+  font-weight: 600;
+  font-size: 24px;
+
+  line-height: 1.33333;
+  font-family: var(--font-family);
+  color: var(--main);
+}
+.carInfoId {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.25;
+  color: var(--gray);
+}
+.carInfoLocation {
+  display: flex;
+}
+.carInfoLocationAddress {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.25;
+  color: var(--main);
+}

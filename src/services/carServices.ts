@@ -19,3 +19,7 @@ export const fetchCars = async (page = 1, limit = 12) => {
   });
   return data;
 };
+export const fetchCarById = async (id: string) => {
+  const { data } = await api.get<Car>(`/cars/${id}`);
+  return data;
+};

@@ -3,6 +3,7 @@ import './App.css';
 import Home from './page/Home/Home';
 import CatalogCars from './page/CatalogCars/CatalogCars';
 import css from './App.module.css';
+import CarDetails from './components/CarDetails/CarDetails';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<CatalogCars />} />
-        {/* <Route path="/catalog/:id" element={<CarDetails />} /> */}
+        <Route path="/catalog/:id" element={<CarDetails />} />
       </Routes>
     </div>
   );
