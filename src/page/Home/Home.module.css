@@ -1,0 +1,53 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    image-set(
+      url('/Hero-pc.webp') type('image/webp') 1x,
+      url('/Hero-pc@2x.webp') type('image/webp') 2x,
+      url('/Hero-pc.jpg') type('image/jpeg') 1x,
+      url('/Hero-pc@2x.jpg') type('image/jpeg') 2x
+    );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--white);
+  font-family: var(--font-family);
+  position: relative;
+  height: 700px;
+  padding-top: 436px;
+  padding-bottom: 60px;
+}
+.heroTitle {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.heroInfo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  margin-bottom: 40px;
+}
+.heroLink {
+  border-radius: 12px;
+  padding: 12px 88px;
+  width: 276px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  background: var(--button);
+  transition: background var(--transition);
+}
+.heroLink:hover {
+  background: var(--button-hover);
+}

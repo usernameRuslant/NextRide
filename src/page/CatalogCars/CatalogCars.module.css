@@ -1,0 +1,11 @@
+.catalogContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.carsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}

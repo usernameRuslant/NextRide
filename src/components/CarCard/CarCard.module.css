@@ -1,0 +1,80 @@
+.card {
+  flex: 1 1 276px; /* минимальная ширина карточки */
+  max-width: 276px;
+}
+.image {
+  border-radius: 14px;
+  width: 276px;
+  height: 268px;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 20, 23, 0.5) 0%,
+    rgba(18, 20, 23, 0.5) 100%
+  );
+  overflow: hidden;
+  background-color: #f3f3f3;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.carInfo {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+
+  font-family: var(--font-family);
+  line-height: 1.25;
+  color: var(--main);
+  margin-bottom: 8px;
+}
+.carInfo span {
+  color: var(--button);
+}
+.price {
+  font-weight: 500;
+  font-size: 16px;
+
+  font-family: var(--font-family);
+  line-height: 1.25;
+  color: var(--main);
+  padding-right: 11px;
+}
+.carMoreInfoListTop {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+.carMoreInfoItem {
+  position: relative;
+  /* padding-right: 6px;
+  padding-left: 6px; */
+}
+.carMoreInfoText {
+  font-weight: 400;
+  font-size: 12px;
+
+  font-family: var(--font-family);
+  line-height: 1.33333;
+  color: var(--gray);
+}
+/* .carMoreInfoItem:not(:last-child)::after { */
+.carMoreInfoListTop .carMoreInfoItem::after {
+  content: '|';
+  position: absolute;
+  right: -8px;
+  top: -3px;
+  color: #dadde1;
+}
+.carMoreInfoListBottom {
+  display: flex;
+  gap: 12px;
+  justify-content: start;
+  margin-bottom: 28px;
+}
+.carMoreInfoListBottom .carMoreInfoItem:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  right: -8px;
+  top: -3px;
+  color: #dadde1;
+}

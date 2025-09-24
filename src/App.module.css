@@ -1,0 +1,43 @@
+.header {
+  background: var(--badges);
+}
+.navigation {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 68px;
+  align-items: center;
+  /* background-color: aqua; */
+  padding-left: 120px;
+  padding-right: 120px;
+  border-bottom: 1px solid var(--badges);
+}
+.listMenu {
+  display: flex;
+  gap: 32px;
+}
+.itemLink {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--main);
+  transition: color var(--transition);
+}
+.itemLink:hover {
+  color: var(--button-hover);
+}
+.itemLinkActive {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--button-hover);
+}
