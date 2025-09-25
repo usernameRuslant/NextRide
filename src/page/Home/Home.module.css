@@ -110,7 +110,7 @@
 }
 
 /* ==================== MOBILE до 375px ==================== */
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .hero {
     height: 500px;
     padding-top: 200px;
@@ -136,7 +136,8 @@
 }
 
 /* ==================== DESKTOP от 1440px ==================== */
-@media (min-width: 1440px) {
+
+@media screen and (min-width: 1440px) {
   .hero {
     height: 900px;
     padding-top: 480px;
