@@ -11,13 +11,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* gap: 40px; расстояние между левым и правым */
+
   padding: 20px;
   flex-wrap: wrap;
 }
 .carDetailsLeft,
 .carDetailsRight {
-  flex: 1; /* оба блока будут занимать равное пространство */
+  flex: 1;
   min-width: 320px;
 }
 .image {

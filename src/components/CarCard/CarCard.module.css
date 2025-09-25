@@ -1,5 +1,5 @@
 .card {
-  flex: 1 1 276px; /* минимальная ширина карточки */
+  flex: 1 1 276px;
   max-width: 276px;
 }
 .image {
@@ -27,6 +27,12 @@
   color: var(--main);
   margin-bottom: 8px;
 }
+.carInfoTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .carInfo span {
   color: var(--button);
 }
@@ -77,4 +83,22 @@
   right: -8px;
   top: -3px;
   color: #dadde1;
+}
+.cardMoreInfo {
+  background: var(--button);
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  padding: 12px 99px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+
+  text-wrap: nowrap;
+  line-height: 1.25;
+  color: var(--white);
+  transition: background var(--transition);
+}
+.cardMoreInfo:hover {
+  background: var(--button-hover);
 }

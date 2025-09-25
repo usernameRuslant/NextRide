@@ -1,6 +1,7 @@
 .header {
   background: var(--badges);
 }
+
 .navigation {
   max-width: 1440px;
   display: flex;
@@ -8,29 +9,17 @@
   margin: 0 auto;
   height: 68px;
   align-items: center;
-  /* background-color: aqua; */
   padding-left: 120px;
   padding-right: 120px;
   border-bottom: 1px solid var(--badges);
 }
+
 .listMenu {
   display: flex;
   gap: 32px;
 }
-.itemLink {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  color: var(--main);
-  transition: color var(--transition);
-}
-.itemLink:hover {
-  color: var(--button-hover);
-}
+
+.itemLink,
 .itemLinkActive {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -39,5 +28,54 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+  transition: color var(--transition);
+}
+
+.itemLink {
+  color: var(--main);
+}
+
+.itemLink:hover {
   color: var(--button-hover);
+}
+
+.itemLinkActive {
+  color: var(--button-hover);
+}
+
+/* ==================== MOBILE до 375px ==================== */
+@media (max-width: 375px) {
+  .navigation {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 56px;
+  }
+
+  .listMenu {
+    gap: 16px;
+  }
+
+  .itemLink,
+  .itemLinkActive {
+    font-size: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+/* ==================== DESKTOP от 1440px ==================== */
+@media (min-width: 1440px) {
+  .navigation {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .listMenu {
+    gap: 40px;
+  }
+
+  .itemLink,
+  .itemLinkActive {
+    font-size: 18px;
+  }
 }

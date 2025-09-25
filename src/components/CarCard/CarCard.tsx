@@ -21,16 +21,7 @@ const CarCard = ({ car }: CarProps) => {
         </p>
         <p className={css.price}>${car.rentalPrice}</p>
       </div>
-      {/* <div className={css.carMoreInfo}>
-        <div className={css.carLocation}>
-          <p>{car.address.split(',').slice(1).join(' |')} |</p>
-          <p>{car.rentalCompany} |</p>
-        </div>
-        <div className={css.carType}>
-          <p>{car.type} |</p>
-          <p>{car.mileage} km</p>
-        </div>
-      </div> */}
+
       <ul className={css.carMoreInfoListTop}>
         <li className={css.carMoreInfoItem}>
           <p className={css.carMoreInfoText}>
@@ -51,10 +42,14 @@ const CarCard = ({ car }: CarProps) => {
           <p className={css.carMoreInfoText}>{car.type} </p>
         </li>
         <li className={css.carMoreInfoItem}>
-          <p className={css.carMoreInfoText}>{car.mileage} km</p>
+          <p className={css.carMoreInfoText}>
+            {car.mileage.toLocaleString('uk-UA')} km
+          </p>
         </li>
       </ul>
-      <Link to={`/catalog/${car.id}`}>Read more</Link>
+      <Link to={`/catalog/${car.id}`} className={css.cardMoreInfo}>
+        Read more
+      </Link>
     </li>
   );
 };

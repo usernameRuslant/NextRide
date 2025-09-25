@@ -1,0 +1,173 @@
+/* .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 12px;
+
+  font-family: var(--font-family);
+  line-height: 1.33333;
+  color: var(--gray);
+}
+
+.inputs {
+  display: flex;
+}
+
+.inputWrapperLeft {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--gray-light);
+
+  border-radius: 12px 0 0 12px;
+  width: 160px;
+  height: 44px;
+  padding-left: 24px;
+  background: var(--inputs);
+}
+
+.inputWrapperRight {
+  display: flex;
+  align-items: center;
+
+  border-radius: 0 12px 12px 0;
+  width: 160px;
+  height: 44px;
+  padding-left: 24px;
+  background: var(--inputs);
+}
+
+.prefix {
+  font-weight: 500;
+  font-size: 16px;
+
+  font-family: var(--font-family);
+  line-height: 1.25;
+  color: var(--main);
+  white-space: nowrap;
+}
+
+.input {
+  width: 94px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+
+  font-family: var(--font-family);
+  line-height: 1.25;
+  color: var(--main);
+  flex: 1;
+  background: transparent;
+} */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--font-family);
+  line-height: 1.33333;
+  color: var(--gray);
+}
+
+.inputs {
+  display: flex;
+}
+
+.inputWrapperLeft {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--gray-light);
+  border-radius: 12px 0 0 12px;
+  width: 160px;
+  height: 44px;
+  padding-left: 24px;
+  background: var(--inputs);
+}
+
+.inputWrapperRight {
+  display: flex;
+  align-items: center;
+  border-radius: 0 12px 12px 0;
+  width: 160px;
+  height: 44px;
+  padding-left: 24px;
+  background: var(--inputs);
+}
+
+.prefix {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 1.25;
+  color: var(--main);
+  white-space: nowrap;
+}
+
+.input {
+  width: 94px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 1.25;
+  color: var(--main);
+  flex: 1;
+  background: transparent;
+}
+
+/* ==================== MOBILE до 375px ==================== */
+@media (max-width: 375px) {
+  .inputs {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .inputWrapperLeft,
+  .inputWrapperRight {
+    flex: 1;
+    min-width: 0;
+    height: 40px;
+    padding-left: 16px;
+    border-radius: 12px;
+  }
+
+  .inputWrapperLeft {
+    border-right: none;
+  }
+
+  .input {
+    font-size: 14px;
+  }
+
+  .prefix {
+    font-size: 14px;
+  }
+}
+
+/* ==================== DESKTOP от 1440px ==================== */
+@media (min-width: 1440px) {
+  .inputWrapperLeft,
+  .inputWrapperRight {
+    width: 200px;
+    height: 48px;
+    padding-left: 28px;
+  }
+
+  .input {
+    font-size: 18px;
+    width: 120px;
+  }
+
+  .prefix {
+    font-size: 18px;
+  }
+}

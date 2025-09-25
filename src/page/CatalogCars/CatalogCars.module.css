@@ -1,11 +1,119 @@
-.catalogContainer {
+/* .catalogContainer {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 124px;
+  padding-top: 84px;
 }
 .carsList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 32px;
+  margin-bottom: 80px;
+}
+.buttonloadMore {
+  border: 1px solid var(--button);
+  border-radius: 12px;
+  padding: 12px 38px;
+  width: 156px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+
+ 
+  line-height: 1.25;
+  color: var(--main);
+  font-family: var(--font-family);
+  text-wrap: nowrap;
+  background-color: transparent;
+  margin: 0 auto;
+  display: block;
+  transition: border var(--transition);
+}
+.buttonloadMore:hover {
+  border: 1px solid var(--button-hover);
+} */
+.catalogContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 124px;
+  padding-top: 84px;
+}
+
+.carsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.buttonloadMore {
+  border: 1px solid var(--button);
+  border-radius: 12px;
+  padding: 12px 38px;
+  width: 156px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+  font-family: var(--font-family);
+  text-wrap: nowrap;
+  background-color: transparent;
+  margin: 0 auto;
+  display: block;
+  transition: border var(--transition);
+}
+
+.buttonloadMore:hover {
+  border: 1px solid var(--button-hover);
+}
+
+/* ==================== MOBILE до 375px ==================== */
+@media (max-width: 375px) {
+  .catalogContainer {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .carsList {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .buttonloadMore {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+/* ==================== DESKTOP от 1440px ==================== */
+@media (min-width: 1440px) {
+  .catalogContainer {
+    padding-top: 84px;
+    padding-bottom: 124px;
+  }
+
+  .carsList {
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  .buttonloadMore {
+    width: 156px;
+    height: 44px;
+    font-size: 16px;
+    padding: 12px 38px;
+  }
 }

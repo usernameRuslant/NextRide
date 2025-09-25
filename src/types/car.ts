@@ -16,3 +16,12 @@ export interface Car {
   rentalConditions: string[];
   mileage: number;
 }
+
+export interface FetchCarsParams {
+  page?: number;
+  limit?: number;
+  brand?: string;
+  rentalPrice?: number;
+  mileageFrom?: number;
+  mileageTo?: number;
+}
