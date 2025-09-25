@@ -53,7 +53,7 @@
 }
 
 /* ==================== MOBILE до 375px ==================== */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 481px) {
   .filterWraper {
     flex-direction: column;
     align-items: stretch;

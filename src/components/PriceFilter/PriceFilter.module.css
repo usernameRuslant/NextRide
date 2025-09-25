@@ -81,7 +81,7 @@
 /* ///////////////////////////////////// */
 
 /* ==================== MOBILE до 375px ==================== */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 481px) {
   .control {
     width: 100%;
     font-size: 14px;
