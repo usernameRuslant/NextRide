@@ -110,7 +110,7 @@
 }
 
 /* ==================== MOBILE до 375px ==================== */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 426px) {
   .hero {
     height: 500px;
     padding-top: 200px;
@@ -139,9 +139,9 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    height: 900px;
-    padding-top: 480px;
-    padding-bottom: 100px;
+    height: 700px;
+    padding-top: 436px;
+    padding-bottom: 60px;
   }
 
   .heroTitle {
