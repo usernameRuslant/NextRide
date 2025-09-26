@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--main);
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 12px;
+  background: var(--button);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.button:hover {
+  background: var(--button-hover);
+}

@@ -4,6 +4,7 @@ import Home from './page/Home/Home';
 import CatalogCars from './page/CatalogCars/CatalogCars';
 import css from './App.module.css';
 import CarDetails from './page/CarDetails/CarDetails';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<CatalogCars />} />
         <Route path="/catalog/:id" element={<CarDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
