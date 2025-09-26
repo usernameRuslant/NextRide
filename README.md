@@ -17,12 +17,12 @@
 
 ## Використані технології
 
-UI & UX: react-icons, react-hot-toast, izitoast, react-spinners, modern-normalize
-Forms & Validation: formik, yup, react-datepicker
-State Management: zustand
-Routing: react-router-dom
-Networking: axios
-Utils: date-fns
+- UI & UX: react-icons, react-hot-toast, izitoast, react-spinners, modern-normalize
+- Forms & Validation: formik, yup, react-datepicker
+- State Management: zustand
+- Routing: react-router-dom
+- Networking: axios
+- Utils: date-fns
 
 ## Сторінки
 
@@ -52,7 +52,7 @@ Utils: date-fns
 
 ## Автор
 
-**Руслан Т.**
+**Ruslan T.**
 
 - GitHub: [usernameRuslant](https://github.com/usernameRuslant)
 - Email: ruslan_t1992@icloud.com
