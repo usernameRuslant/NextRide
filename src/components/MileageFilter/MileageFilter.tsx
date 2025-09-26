@@ -10,7 +10,6 @@ interface MileageFilterProps {
   onChangeTo: (value: number | null) => void;
 }
 
-// форматирование для отображения "10000" → "10,000"
 const formatNumber = (value: string) => {
   if (!value) return '';
   const num = Number(value.replace(/\D/g, ''));
@@ -18,7 +17,6 @@ const formatNumber = (value: string) => {
   return num.toLocaleString('en-US');
 };
 
-// парсинг в число (ограничение сверху)
 const parseNumber = (value: string): number | null => {
   const cleaned = value.replace(/,/g, '');
   if (!cleaned) return null;

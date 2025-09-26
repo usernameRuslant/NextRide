@@ -1,16 +1,18 @@
 import { Link, NavLink, Route, Routes } from 'react-router-dom';
-import './App.css';
+
 import Home from './page/Home/Home';
 import CatalogCars from './page/CatalogCars/CatalogCars';
 import css from './App.module.css';
-import CarDetails from './components/CarDetails/CarDetails';
+import CarDetails from './page/CarDetails/CarDetails';
 
 function App() {
   return (
-    <div>
-      <nav className={css.header}>
-        <div className={css.navigation}>
-          <Link to="/">RentalCar</Link>
+    <>
+      <header className={css.header}>
+        <nav className={css.navigation}>
+          <Link to="/" className={css.home}>
+            Rental<span className={css.homeSpan}>Car</span>
+          </Link>
           <ul className={css.listMenu}>
             <li>
               <NavLink
@@ -33,15 +35,15 @@ function App() {
               </NavLink>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<CatalogCars />} />
         <Route path="/catalog/:id" element={<CarDetails />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

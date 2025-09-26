@@ -1,0 +1,90 @@
+.bookingContainer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.bookingContainer h3 {
+  font-weight: 600;
+  font-size: 20px;
+
+  line-height: 1.2;
+  color: var(--main);
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+}
+
+.bookingContainer p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.25;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+.formGroupList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.formGroup textarea {
+  display: block;
+}
+.bookingForm input,
+.bookingForm textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  background: var(--inputs);
+  font-size: 14px;
+  outline: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 20px; */
+  line-height: 1.25;
+  color: var(--gray);
+}
+
+.bookingForm textarea {
+  resize: none;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  margin-top: 4px;
+}
+
+.btnSend {
+  display: block;
+  border-radius: 12px;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 6px;
+  background: var(--button);
+
+  cursor: pointer;
+  transition: background var(--transition);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.btnSend:hover {
+  background: var(--button-hover);
+}

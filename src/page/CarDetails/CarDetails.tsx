@@ -11,6 +11,10 @@ import {
 } from 'react-icons/bs';
 import { GoGear } from 'react-icons/go';
 import { FaRegCircleCheck } from 'react-icons/fa6';
+import BookingForm from '../../components/BookingForm/BookingForm';
+import Loader from '../../components/Loader/Loader';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const CarDetails = () => {
   const { id } = useParams<{ id: string }>();
@@ -19,15 +23,33 @@ const CarDetails = () => {
 
   useEffect(() => {
     if (id) {
-      fetchCarById(id).then((data) => {
-        setCar(data);
-        setLoading(false);
-      });
+      fetchCarById(id)
+        .then((data) => {
+          if (data) {
+            setCar(data);
+          } else {
+            iziToast.error({
+              title: 'Error',
+              message: 'Car not found',
+              position: 'topRight',
+            });
+          }
+        })
+        .catch(() => {
+          iziToast.error({
+            title: 'Error',
+            message: 'Failed to load car details. Please try again later.',
+            position: 'topRight',
+          });
+        })
+        .finally(() => {
+          setLoading(false);
+        });
     }
   }, [id]);
 
-  if (loading) return <p>Loading...</p>;
-  if (!car) return <p>Car not found</p>;
+  if (loading) return <Loader />;
+  if (!car) return null;
 
   return (
     <section className={css.carDetails}>
@@ -38,7 +60,7 @@ const CarDetails = () => {
           className={css.image}
           loading="lazy"
         />
-        <form action="" className={css.form}></form>
+        <BookingForm carId={car.id} />
       </div>
       <div className={css.carDetailsRight}>
         <div>
@@ -53,7 +75,9 @@ const CarDetails = () => {
             <p className={css.carInfoLocationAddress}>
               {car.address.split(',').slice(1).join(',').trim()}
             </p>
-            <p className={css.carInfoLocationMile}>Mileage: {car.mileage} km</p>
+            <p className={css.carInfoLocationMile}>
+              Mileage: {car.mileage.toLocaleString('uk-UA')} km
+            </p>
           </div>
         </div>
         <p className={css.carInfoPrice}>${car.rentalPrice}</p>
@@ -75,11 +99,11 @@ const CarDetails = () => {
           </li>
           <li className={css.carInfoRentItem}>
             <BsCarFront />
-            <p>Type:{car.type}</p>
+            <p>Type: {car.type}</p>
           </li>
           <li className={css.carInfoRentItem}>
             <BsFuelPump />
-            <p>Fuel Consumption:{car.fuelConsumption}</p>
+            <p>Fuel Consumption: {car.fuelConsumption}</p>
           </li>
           <li className={css.carInfoRentItem}>
             <GoGear />

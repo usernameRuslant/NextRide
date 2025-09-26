@@ -1,17 +1,28 @@
 # RentalCar
 
 Веб-додаток для оренди автомобілів.
+Пошук авто за брендом, бронювання, перегляд деталей
+
 Реалізовано на React + Vite з використанням API: https://car-rental-api.goit.global
+
+## Основні функції
+
+- Перегляд каталогу автомобілів з пагінацією
+- Фільтрація за брендом, ціною та пробігом
+- Перегляд детальної інформації про авто
+- Додавання авто в улюблене (LocalStorage)
+- Форма бронювання з валідацією (Formik + Yup)
+- Сповіщення користувача через iziToast
+- Лоадери (react-spinners)
 
 ## Використані технології
 
-- React
-- Vite
-- React Router
-- Axios
-- Zustand
-- React Hot Toast
-- Modern Normalize (стилізація)
+UI & UX: react-icons, react-hot-toast, izitoast, react-spinners, modern-normalize
+Forms & Validation: formik, yup, react-datepicker
+State Management: zustand
+Routing: react-router-dom
+Networking: axios
+Utils: date-fns
 
 ## Сторінки
 
@@ -22,8 +33,9 @@
 ## Запуск проєкту
 
 1. Клонувати репозиторій:
-   git clone <url>
-   cd rentalcar
+   git clone https://github.com/usernameRuslant/NextRide.git
+   cd NextRide
+   code .
 
 2. Встановити залежності:
    npm install
@@ -37,3 +49,10 @@
 ## Мета
 
 Створення фронтенд частини веб-додатку для компанії "RentalCar".
+
+## Автор
+
+**Руслан Т.**
+
+- GitHub: [usernameRuslant](https://github.com/usernameRuslant)
+- Email: ruslan_t1992@icloud.com

@@ -52,8 +52,6 @@
 }
 .carMoreInfoItem {
   position: relative;
-  /* padding-right: 6px;
-  padding-left: 6px; */
 }
 .carMoreInfoText {
   font-weight: 400;
@@ -63,7 +61,7 @@
   line-height: 1.33333;
   color: var(--gray);
 }
-/* .carMoreInfoItem:not(:last-child)::after { */
+
 .carMoreInfoListTop .carMoreInfoItem::after {
   content: '|';
   position: absolute;
@@ -75,7 +73,7 @@
   display: flex;
   gap: 12px;
   justify-content: start;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 .carMoreInfoListBottom .carMoreInfoItem:not(:last-child)::after {
   content: '|';
@@ -101,4 +99,18 @@
 }
 .cardMoreInfo:hover {
   background: var(--button-hover);
+}
+/* ///////////////// */
+.card {
+  position: relative;
+}
+
+.heartBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }

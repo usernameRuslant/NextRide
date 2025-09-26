@@ -15,12 +15,12 @@ export const fetchCarsBasic = async (page = 1, limit = 12) => {
   const { data } = await api.get<FetchCarsResponse>('/cars', {
     params: { page, limit },
   });
-  return { ...data, page: Number(data.page) }; // 🔧
+  return { ...data, page: Number(data.page) }; //
 };
 
 export const fetchCarsFilter = async (params: FetchCarsParams = {}) => {
   const { data } = await api.get<FetchCarsResponse>('/cars', { params });
-  return { ...data, page: Number(data.page) }; // 🔧
+  return { ...data, page: Number(data.page) }; //
 };
 export const fetchCarById = async (id: string) => {
   const { data } = await api.get<Car>(`/cars/${id}`);
@@ -31,4 +31,5 @@ export const fetchBrands = async (): Promise<string[]> => {
   const { data } = await api.get<string[]>('/brands');
   return data;
 };
+//
 //

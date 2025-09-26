@@ -1,5 +1,6 @@
 .header {
   background: var(--badges);
+  border-bottom: 1px solid var(--badges);
 }
 
 .navigation {
@@ -13,7 +14,16 @@
   padding-right: 120px;
   border-bottom: 1px solid var(--badges);
 }
-
+.home {
+  width: 104px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--main);
+}
+.homeSpan {
+  color: var(--button);
+}
 .listMenu {
   display: flex;
   gap: 32px;
@@ -60,23 +70,5 @@
     font-size: 14px;
     padding-top: 16px;
     padding-bottom: 16px;
-  }
-}
-
-/* ==================== DESKTOP от 1440px ==================== */
-
-@media screen and (min-width: 1440px) {
-  .navigation {
-    padding-left: 160px;
-    padding-right: 160px;
-  }
-
-  .listMenu {
-    gap: 40px;
-  }
-
-  .itemLink,
-  .itemLinkActive {
-    font-size: 18px;
   }
 }
